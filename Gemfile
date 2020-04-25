@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
+gem 'bcrypt', '3.1.13'
+gem 'bootstrap-sass', '3.4.1'
 gem 'uglifier', '>= 1.3.0' 
 gem 'coffee-rails', '~> 4.2' 
 gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
@@ -12,6 +14,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem "aws-sdk-s3", require: false
 
 group :development, :test do
   gem 'sqlite3', '1.4.1'
